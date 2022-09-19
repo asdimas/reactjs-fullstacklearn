@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/reactjs-fullstacklearn/static/css/main.073c9b0a.css",
-    "main.js": "/reactjs-fullstacklearn/static/js/main.a0a1385c.js",
+    "main.css": "/reactjs-fullstacklearn/static/css/main.a37beab3.css",
+    "main.js": "/reactjs-fullstacklearn/static/js/main.f0609ef0.js",
     "static/js/787.6aba2dd2.chunk.js": "/reactjs-fullstacklearn/static/js/787.6aba2dd2.chunk.js",
-    "static/media/logo.svg": "/reactjs-fullstacklearn/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/reactjs-fullstacklearn/index.html",
-    "main.073c9b0a.css.map": "/reactjs-fullstacklearn/static/css/main.073c9b0a.css.map",
-    "main.a0a1385c.js.map": "/reactjs-fullstacklearn/static/js/main.a0a1385c.js.map",
+    "main.a37beab3.css.map": "/reactjs-fullstacklearn/static/css/main.a37beab3.css.map",
+    "main.f0609ef0.js.map": "/reactjs-fullstacklearn/static/js/main.f0609ef0.js.map",
     "787.6aba2dd2.chunk.js.map": "/reactjs-fullstacklearn/static/js/787.6aba2dd2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.a0a1385c.js"
+    "static/css/main.a37beab3.css",
+    "static/js/main.f0609ef0.js"
   ]
 }
