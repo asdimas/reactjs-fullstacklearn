@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./Product.css";
 import CardProduct from "./CardProduct/CardProduct";
+import CartImage from "../../assets/cart.png";
 
 class Product extends Component {
   state = {
@@ -24,7 +25,7 @@ class Product extends Component {
             />
           </div>
           <div className="troley">
-            <img src="cart-48px.png" alt="" />
+            <img src={CartImage} alt="cart" />
             <div className="count">{this.state.order}</div>
           </div>
         </div>
