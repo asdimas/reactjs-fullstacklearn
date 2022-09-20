@@ -26,6 +26,8 @@ class Product extends Component {
           </div>
           <div className="troley">
             <img src={CartImage} alt="cart" />
+            {/* <img src={process.env.PUBLIC_URL + "/cart.png"} alt="cart" /> */}
+
             <div className="count">{this.state.order}</div>
           </div>
         </div>
