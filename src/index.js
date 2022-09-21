@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 // import HelloComponent from "./component/HelloComponent";
 // import YoutubeComp from "./component/YoutubeComp/YoutubeComp";
 import Home from "./container/Home/Home";
+import "./styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
