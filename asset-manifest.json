@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactjs-fullstacklearn/static/css/main.6f2db1ca.css",
-    "main.js": "/reactjs-fullstacklearn/static/js/main.08dc710e.js",
+    "main.css": "/reactjs-fullstacklearn/static/css/main.a3be1e02.css",
+    "main.js": "/reactjs-fullstacklearn/static/js/main.55c17c4c.js",
     "static/js/787.6aba2dd2.chunk.js": "/reactjs-fullstacklearn/static/js/787.6aba2dd2.chunk.js",
     "index.html": "/reactjs-fullstacklearn/index.html",
-    "main.6f2db1ca.css.map": "/reactjs-fullstacklearn/static/css/main.6f2db1ca.css.map",
-    "main.08dc710e.js.map": "/reactjs-fullstacklearn/static/js/main.08dc710e.js.map",
+    "main.a3be1e02.css.map": "/reactjs-fullstacklearn/static/css/main.a3be1e02.css.map",
+    "main.55c17c4c.js.map": "/reactjs-fullstacklearn/static/js/main.55c17c4c.js.map",
     "787.6aba2dd2.chunk.js.map": "/reactjs-fullstacklearn/static/js/787.6aba2dd2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f2db1ca.css",
-    "static/js/main.08dc710e.js"
+    "static/css/main.a3be1e02.css",
+    "static/js/main.55c17c4c.js"
   ]
 }
