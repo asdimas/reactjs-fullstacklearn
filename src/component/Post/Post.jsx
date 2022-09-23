@@ -11,6 +11,14 @@ const Post = (props) => {
         <p className="title">{props.data.title}</p>
         <p className="desc">{props.data.body}</p>
         <button
+          className="btn-update"
+          onClick={() => {
+            props.onUpdate(props.data);
+          }}
+        >
+          Update
+        </button>
+        <button
           className="btn-delete"
           onClick={() => {
             props.onDelete(props.data.id);

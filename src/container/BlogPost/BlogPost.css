@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .section-title {
   margin-left: 20px;
   font-size: 20px;
@@ -7,10 +10,10 @@
 
 .post {
   display: flex;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  width: 500px;
-  padding: 10px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(151, 150, 150, 0.3);
+  width: 550px;
+  padding: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 4px;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -57,4 +60,59 @@
   font-weight: 600;
   border-radius: 6px;
   cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-update {
+  /* width: 100px; */
+  margin-top: 10px;
+  border: none;
+  background-color: rgb(73, 73, 236);
+  font-size: 14px;
+  color: white;
+  padding: 10px 30px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-add-post {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 550px;
+  margin-left: 20px;
+  padding: 10px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+}
+
+.form-add-post label {
+  display: block;
+  font-size: 14px;
+  color: #607d8b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-add-post input,
+.form-add-post textarea {
+  outline: none;
+  border: 1px solid #607d8b;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #607d8b;
+}
+
+button.btn-simpan {
+  outline: none;
+  border: 1px solid #2196f3;
+  padding: 10px 30px;
+  border-radius: 4px;
+  color: #2196f3;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
 }
