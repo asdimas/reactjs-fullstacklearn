@@ -1,35 +1,17 @@
-import React from "react";
-// import YoutubeComp from "../../component/YoutubeComp/YoutubeComp";
-// import Product from "../Product/Product";
-import BlogPost from "../BlogPost/BlogPost";
-// import LifeCycleComp from "../LifeCycleComp/LifeCycleComp";
+import React, { Fragment } from "react";
+import Youtube from "../../Pages/YoutubeComp/Youtube";
+import Product from "../../Pages/Product/Product";
+import LifeCycleComp from "../../Pages/LifeCycleComp/LifeCycleComp";
+import BlogPost from "../../Pages/BlogPost/BlogPost";
+import DetailPost from "../../Pages/BlogPost/DetailPost/DetailPost";
+import "./Home.css";
+// import { Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-// const cardData = [
-//   {
-//     time: "6.12",
-//     title: "Javascript Fundamental - Bagian 1",
-//     desc: "14x ditonton. 2 bulan yang lalu",
-//   },
-//   {
-//     time: "4.03",
-//     title: "Javascript Fundamental - Bagian 2",
-//     desc: "200x ditonton. 1 bulan yang lalu",
-//   },
-//   {
-//     time: "8.54",
-//     title: "Javascript Fundamental - Bagian 3",
-//     desc: "27x ditonton. 18 hari yang lalu",
-//   },
-//   {
-//     time: "3.25",
-//     title: "Javascript Fundamental - Bagian 4",
-//     desc: "122x ditonton. 2 hari yang lalu",
-//   },
-// ];
 class Home extends React.Component {
-  //   state = {
-  //     showComponent: true,
-  //   };
+  // state = {
+  //   showComponent: true,
+  // };
 
   componentDidMount() {
     // setTimeout(() => {
@@ -40,49 +22,22 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <div>
-        <p>Course Component</p>
-        <hr />
-        {/* <YoutubeComp
-          time="7.12"
-          title="Javascript Fundamental - Bagian 1"
-          desc="14x ditonton. 2 bulan yang lalu"
-        />
-        <YoutubeComp
-          time="4.03"
-          title="Javascript Fundamental - Bagian 2"
-          desc="200x ditonton. 1 bulan yang lalu"
-        />
-        <YoutubeComp
-          time="8.54"
-          title="Javascript Fundamental - Bagian 3"
-          desc="27x ditonton. 18 hari yang lalu"
-        />
-        <YoutubeComp
-          time="3.25"
-          title="Javascript Fundamental - Bagian 4"
-          desc="122x ditonton. 2 hari yang lalu"
-        />
-        <YoutubeComp /> */}
-
-        {/* <YoutubeComp {...cardData[0]} />
-        <YoutubeComp {...cardData[1]} />
-        <YoutubeComp {...cardData[2]} />
-        <YoutubeComp {...cardData[3]} /> */}
-
-        {/* {cardData.map((cardsData) => (
-          <YoutubeComp {...cardsData} />
-        ))} */}
-        <p>Counter</p>
-        <hr />
-        {/* <Product /> */}
-        <p>LifeCycle Component</p>
-        <hr />
-        {/* {this.state.showComponent ? <LifeCycleComp /> : null} */}
-        <p>Blog Post</p>
-        <hr />
-        <BlogPost />
-      </div>
+      <Router>
+        <div className="navigation">
+          <Link to="/reactjs-fullstacklearn">Blog Post</Link>
+          <Link to="/product">Product</Link>
+          <Link to="/lifecycle">Lifecycle</Link>
+          <Link to="/youtube">Youtube</Link>
+        </div>
+        <Routes>
+          <Route path="/reactjs-fullstacklearn" element={<BlogPost />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/detail-post/:id" element={<DetailPost />} />
+          <Route path="/lifecycle" element={<LifeCycleComp />} />
+          <Route path="/youtube" element={<Youtube />} />
+          <Route path="*" element={<h1>Not Found</h1>} />
+        </Routes>
+      </Router>
     );
   }
 }

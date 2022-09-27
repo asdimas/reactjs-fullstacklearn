@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import Post from "../../component/Post/Post";
 import "./BlogPost.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 class BlogPost extends Component {
   state = {
@@ -81,6 +82,13 @@ class BlogPost extends Component {
     });
   };
 
+  onDetailHandler = (cek) => {
+    // history.push(`/detail-post/${id}`);
+    // const navigate = useNavigate();
+    // navigate(`/detail-post/:id`);
+    console.log(cek);
+  };
+
   onHandlerForm = (event) => {
     // console.log("form data", event.target);
     // console.log("initial state: ", this.state.formBlogPost);
@@ -110,7 +118,6 @@ class BlogPost extends Component {
       this.postDataAPI();
     }
   };
-
   componentDidMount() {
     // fetch("https://jsonplaceholder.typicode.com/posts")
     //   .then((response) => response.json())
@@ -132,6 +139,8 @@ class BlogPost extends Component {
   render() {
     return (
       <Fragment>
+        <p className="title-page">Halaman Blog Post</p>
+        <hr />
         <p className="section-title">Blog Post</p>
         {/* <Post title="title" desc="desc" /> */}
         <form className="form-add-post" onSubmit={this.onSubmitHandler}>
@@ -163,6 +172,7 @@ class BlogPost extends Component {
               data={post}
               onDelete={this.onDelete}
               onUpdate={this.onUpdateHandler}
+              getDetail={this.onDetailHandler}
             />
           );
         })}

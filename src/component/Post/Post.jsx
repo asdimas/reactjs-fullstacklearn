@@ -1,14 +1,25 @@
 import React from "react";
-import "../../container/BlogPost/BlogPost.css";
+import "../../Pages/BlogPost/BlogPost.css";
+import { useNavigate } from "react-router-dom";
 
 const Post = (props) => {
+  const navigate = useNavigate();
   return (
     <div className="post">
       <div className="img-thumb">
         <img src="https://placeimg.com/250/150/tech" alt="" />
       </div>
       <div className="content">
-        <p className="title">{props.data.title}</p>
+        {/* navigate("/detail-post/:id") */}
+        <p
+          className="title"
+          onClick={(id) => {
+            navigate(`/detail-post/${id}`);
+            props.getDetail(props.data.id);
+          }}
+        >
+          {props.data.title}
+        </p>
         <p className="desc">{props.data.body}</p>
         <button
           className="btn-update"
